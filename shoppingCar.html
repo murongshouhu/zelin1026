@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="flexible.js"></script>    <!--引入，放在前面 手机端页面需引入  先加载-->
+</head>
+<body class="wrapper">
+<div id="header">
+    <div id="home"><a href="#">好邻居</a></div>
+    <div class="car_theme" id="car_edit">编辑</div>
+    <div id="my"><a href="personalcenter.html"></a></div>
+</div>
+<div id="shoppingcar">
+    <div id="main">
+        <ul id="shopping_list">
+            <li class="select">
+                <div class="no_select select_ok"></div>
+                <div class="shopping_img"><a href="productdetails.html"><img src="images/goods1.png"></a></div>
+                <div class="shopping_box">
+                    <h2>果仁巧克力酱霜糖蛋糕1超美味巧克力酱霜糖蛋糕...</h2>
+
+                    <div class="shopping_box_bottom">
+                        <div class="unit_price">￥<span>12.00</span></div>
+                        <div class="number">x<span>2</span></div>
+                        <!--编辑状态加减框-->
+                        <div class="number_content dsn">
+                            <div class="minus_icon js_minus"></div>
+                            <div class="number_edit">0</div>
+                            <div class="add_icon js_add"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+          <li class="select"> <div class="no_select select_ok"></div> <div class="shopping_img"><a href="productdetails.html"><img src="images/goods1.png"></a></div> <div class="shopping_box"> <h2>果仁巧克力酱霜糖蛋糕1超美味巧克力酱霜糖蛋糕...</h2> <div class="shopping_box_bottom"> <div class="unit_price">￥<span>22.00</span></div> <div class="number">x<span>2</span></div> <!--编辑状态加减框 --><div class="number_content dsn"> <div class="minus_icon js_minus"></div> <div class="number_edit">0</div> <div class="add_icon js_add"></div> </div> </div> </div> </li>
+            <li class="select">
+                <div class="no_select select_ok"></div>
+                <div class="shopping_img"><a href="productdetails.html"><img src="images/goods1.png"></a></div>
+                <div class="shopping_box">
+                    <h2>果仁巧克力酱霜糖蛋糕1超美味巧克力酱霜糖蛋糕...</h2>
+
+                    <div class="shopping_box_bottom">
+                        <div class="unit_price">￥<span>32.00</span></div>
+                        <div class="number">x<span>2</span></div>
+                        <!--编辑状态加减框-->
+                        <div class="number_content dsn">
+                            <div class="minus_icon js_minus"></div>
+                            <div class="number_edit">0</div>
+                            <div class="add_icon js_add"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="floatbar_bottom">
+        <div id="select_all" class="select">
+            <div class="select_all no_select select_ok"></div>
+            <div class="select_all_txt">全选</div>
+        </div>
+        <div id="total_box">
+            <div>￥<span id="pay_account">109.00</span></div>
+            <div id="total_txt">合计</div>
+        </div>
+        <div id="account_btn"><a href="#">去结算</a></div>
+        <div id="delete_btn" class="dsn">删除</div>
+    </div>
+    <!--+-数量弹框-->
+    <div class="pop_wrapper dsn" id="add_minus_Pop">
+        <div class="pop_con">
+            <h2>请输入数量</h2>
+
+            <div class="number_box">
+                <div class="number_minus js_minus"></div>
+                <input type="number" id="number_input" value="0">
+
+                <div class="number_add js_add"></div>
+            </div>
+            <div class="pop_btn" id="number_Btn">
+                <div class="pop_remove_btn">取消</div>
+                <div class="pop_sure_btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="pop_wrapper dsn" id="sure_Del">
+        <div class="pop_con">
+            <h2>确定删除这<span></span>件商品吗？</h2>
+
+            <div class="pop_btn" id="sure_Del_btn">
+                <div class="pop_remove_btn">考虑一下</div>
+                <div class="pop_sure_btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="pop_wrapper dsn" id="none_Select">
+        <div class="pop_con">
+            <h2>您还没有选择商品哦！</h2>
+        </div>
+    </div>
+</div>
+<!--购物车为空-->
+<div id="empty_cart" class="dsn">
+    <div id="empty">购物车空空如也T.T</div>
+    <div class="btn_box" id="goto_shop"><a href="index.html">去逛逛</a></div>
+</div>
+<script src="js/libs/zepto.js"></script>
+<script src="js/libs/store.js"></script>     <!--  有浏览器不能兼容识别localStorage  适用于低版本引入-->
+<script src="js/shoppingCar正式版.js"></script>
+<!--<script src="js/shoppingCar自写.js"></script>-->
+<script src="js/common.js"></script>               <!-- 引入公用文件夹common-->
+</body>
+</html>
