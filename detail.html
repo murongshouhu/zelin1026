@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no,email=no">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>商品详情页</title>
+</head>
+<body id="product_details" class="wrapper">
+    <div id="header">
+        <div id="home"><a>好邻居</a></div>
+        <div id="my"><a></a></div>
+    </div> 
+    <div id="main">
+        <div id="section1">
+            <div id="slideBox" class="slideBox">
+                <div class="bd">
+                  <ul>
+                    <!--<li>
+                        <a class="pic" id="pic" href="#"><img src="images/product1.png"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="images/product2.png"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="images/product3.png"/></a>
+                    </li>-->
+                  </ul>
+                </div>
+                <div class="hd">
+                  <ul></ul>
+                </div>
+            </div>
+            <div class="shopping_box">
+                <h2>果仁巧克力酱霜糖蛋糕 超美味果酱夹心蛋糕大减价超值选购/欢迎选购</h2>
+                <div class="shopping_box_bottom">
+                    <div class="unit_price">￥<span>32.00</span></div>
+                    <div class="number" id="leftNum">剩余数量：<span>102</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <div class="pro_content clearfix">
+                <div class="purchase_numtxt fl">购买数量</div>
+                <div class="purchase_num_box fr">
+                    <div class="minus_icon js_minus"></div>
+                    <div class="number_edit js_num">1</div>
+                    <div class="add_icon js_add"></div>
+                </div>
+            </div>
+        </div>
+        <div id="section3">
+            <div id="graphic_details">
+                <h2>图文详情</h2>
+                <div id="graphic_content">
+                    自己编辑的内容
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="floatbar_bottom">
+        <div id="floatbar_bottom_cart">
+            <a></a>
+            <div class="car_trolley dsn"></div>
+        </div>
+        <div id="join_car">加入购物车</div>
+        <div id="buy_now"><a>立即购买</a></div>
+    </div>
+    <!--+-数量弹框-->
+    <div class="pop_wrapper dsn" id="add_minus_Pop">
+        <div class="pop_con">
+            <h2>请输入数量</h2>
+            <div class="number_box">
+                <div class="number_minus js_minus"></div>
+                <input type="number" id="number_input" class="po_num">
+                <div class="number_add js_add"></div>
+            </div>
+            <div class="pop_btn" id="number_Btn">
+                <div class="pop_remove_btn">取消</div>
+                <div class="pop_sure_btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="pop_wrapper dsn" id="hasAdd">
+        <div class="pop_con">
+            <h2>已成功加入购物车!</h2>
+        </div>
+    </div>
+    <script src="js/libs/zepto.js"></script>
+    <script src="js/libs/flexible.js"></script>
+	<script src="js/libs/Touch.1.1.js"></script>
+	<script src="js/detail正式.js"></script>
+	<!--<script src="js/detail自写.js"></script>-->
+    <script>
+//      Touch({ 
+//	        slideCell:"#slideBox",
+//	        titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+//	        mainCell:".bd ul", 
+//	        effect:"left", 
+//	        autoPage:true,//自动分页
+//	        autoPlay:true, //自动播放
+//      });
+    </script>
+</body>
+</html>

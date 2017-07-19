@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no,email=no">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>首页</title>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/libs/flexible.js"></script>
+<script type="text/javascript" src="js/libs/Touch.1.1.js"></script>
+
+</head>
+<body id="index" class="wrapper">
+    <div id="header">
+        <div id="home"><a href="index.html">好邻居</a></div>
+        <div id="my"><a></a></div>
+    </div> 
+    <div id="main">
+        <div id="section1">
+            <div id="slideBox" class="slideBox">
+                <div class="bd">
+                  <ul>
+                    <li>
+                        <a class="pic"><img src="images/img1.png" /></a>
+                    </li>
+                    <li>
+                        <a class="pic"><img src="images/img1.png"/></a>
+                    </li>
+                    <li>
+                        <a class="pic"><img src="images/img1.png"/></a>
+                    </li>
+                    <li>
+                        <a class="pic"><img src="images/img1.png"/></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="hd">
+                  <ul></ul>
+                </div>
+            </div>
+            <ul id="main_nav">
+                <li id="product_all"><a>全部商品</a></li>
+                <li id="quick_order"><a>快速下单</a></li>
+                <li id="coupons"><a>优惠券</a></li>
+                <li id="my_order"><a>我的订单</a></li>
+            </ul>
+            <div id="main_privilege">
+               <ul id="coupons_wrap" class="clearfix">
+                    <li>
+                        <div class="coupons_content">
+                            <div class="coupons_l">
+                                <div class="coupons_price">￥<span class="coupons_value">20</span></div>
+                                <div class="coupons_title">优惠券</div>
+                            </div>
+                            <div class="tap_pay">
+                                <a>点击领取</a>
+                            </div>
+                            <div class="circle_l"></div>
+                            <div class="circle_r"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="coupons_content">
+                            <div class="coupons_l">
+                                <div class="coupons_price">￥<span class="coupons_value">20</span></div>
+                                <div class="coupons_title">优惠券</div>
+                            </div>
+                            <div class="tap_pay">
+                                <a>点击领取</a>
+                            </div>
+                            <div class="circle_l"></div>
+                            <div class="circle_r"></div>
+                        </div>
+                    </li>
+                </ul> 
+                <div id="recommend">
+                    <img src="images/recommend.png">
+                    <div class="recom_wrap">
+                        <div class="recom_inf">
+                            <div class="recom_tilte">
+                                <div class="recom_txt">现价</div>
+                            </div>
+                            <div class="recom_price">
+                                <p>￥32.00</p>
+                                <s>原价：42.00</s>
+                            </div>
+                        </div>
+                    </div>
+                    <a></a>
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <div id="main_category">
+                <div id="category_title">
+                    <div id="category_titletxt">分类1</div>
+                    <div id="arrow_more"></div>
+                </div>
+                <ul id="product_list" class="clearfix">
+                    <li>
+                        <div class="product_box">
+                            <a><img src="images/product1.png"></a>
+                            <h2><a>雪顶巧克力慕斯冰</a></h2>
+                            <div class="clearfix">
+                                <div class="product_price fl">￥<span class="product_mpney">9.00</span></div>
+                                <div class="product_car fr"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product_box">
+                            <a><img src="images/product2.png"></a>
+                            <h2><a>雪顶巧克力慕斯冰</a></h2>
+                            <div class="clearfix">
+                                <div class="product_price fl">￥<span class="product_mpney">9.00</span></div>
+                                <div class="product_car fr"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product_box">
+                            <a><img src="images/product3.png"></a>
+                            <h2><a>雪顶巧克力慕斯冰</a></h2>
+                            <div class="clearfix">
+                                <div class="product_price fl">￥<span class="product_mpney">9.00</span></div>
+                                <div class="product_car fr"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product_box">
+                            <a><img src="images/product4.png"></a>
+                            <h2><a>雪顶巧克力慕斯冰</a></h2>
+                            <div class="clearfix">
+                                <div class="product_price fl">￥<span class="product_mpney">9.00</span></div>
+                                <div class="product_car fr"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="btn_more">
+                <a> 查看更多商品</a>
+            </div>
+        </div>
+    </div>
+    <div id="pop_car">
+        <div class="car_trolley dsn"></div>
+        <a></a>
+    </div>
+    <div class="pop_wrapper dsn" id="hasAdd">
+        <div class="pop_con">
+            <h2>已成功加入购物车!</h2>
+        </div>
+    </div>
+    <script type="text/javascript">
+        Touch({
+        slideCell:"#slideBox",
+        titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell:".bd ul", 
+        effect:"leftLoop", 
+        autoPage:true,//自动分页
+        autoPlay:true, //自动播放
+        });
+    </script>
+    <script src="js/home自写.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

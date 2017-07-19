@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>面对面支付</title>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/libs/flexible.js"></script>
+</head>
+<body id="facetoface" class="wrapper">
+    <div id="main">
+        <div id="main_top">
+            <ul class="clearfix">
+                <li class="customer_img"><img src="images/menber_img.png"></li>
+                <li class="merchants_img"><img src="images/person_img2.png"></li>
+            </ul>
+            <h2>您正在向<span>好邻居超市</span>直接支付现金</h2>
+
+            <div id="pay_box">
+                <div id="input_box">
+                    <div class="input_box_left"></div>
+                    <input type="number" id="pay_value" placeholder="请输入金额"/>
+                    <div id="icon_del"></div>
+                </div>
+                <p id="pay-box" style="">
+                	您需要支付金额：￥<span id="need_pay">20.00</span></p>
+            </div>
+              <div class="btn_box" id="face_pay"><a>去支付</a></div>
+        </div>
+      
+    </div>
+    <script src="js/libs/zepto.js"></script>
+    <script src="js/faceToFace正式版.js"></script>
+    <!--<script src="js/faceToFace自写版.js"></script>-->
+</body>
+</html>

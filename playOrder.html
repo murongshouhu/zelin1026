@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no,email=no">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>确认订单</title>
+<script type="text/javascript" src="flexible.js"></script>
+</head>
+<body id="sureorder" class="wrapper">
+     <div id="header">
+        <div id="home"><a href="#">好邻居</a></div>
+        <div id="my"><a href="personalcenter.html"></a></div>
+    </div> 
+    <div id="main">
+        <div id="section1">
+            <ul id="good_list">
+                <li>
+                    <div class="shopping_img"><a href="productdetails.html"><img src="images/sure_img1.png"></a></div>
+                    <div class="shopping_box">
+                        <h2>果仁巧克力酱霜糖蛋糕超美味果酱夹心...</h2>
+                        <div class="shopping_box_bottom">
+                            <div class="unit_price">￥<span>32.00</span></div>
+                            <div class="number">x<span>2</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="shopping_img"><a href="productdetails.html"><img src="images/sure_img1.png"></a></div>
+                    <div class="shopping_box">
+                        <h2>果仁巧克力酱霜糖蛋糕超美味果酱夹心...</h2>
+                        <div class="shopping_box_bottom">
+                            <div class="unit_price">￥<span>32.00</span></div>
+                            <div class="number">x<span>2</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="shopping_img"><a href="productdetails.html"><img src="images/sure_img1.png"></a></div>
+                    <div class="shopping_box">
+                        <h2>果仁巧克力酱霜糖蛋糕超美味果酱夹心...</h2>
+                        <div class="shopping_box_bottom">
+                            <div class="unit_price">￥<span>32.00</span></div>
+                            <div class="number">x<span>2</span></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="container" id="good_coupons">
+                <div class="container_left">优惠券</div>
+                <div class="container_right">不使用优惠券</div>
+                <div id="good_coupons_arrow"></div>
+            </div>
+            <div id="good_distribution" class="container">
+                <div class="good_distrib_left container_left">配送方式</div>
+                <ul class="container_right">
+                    <li id="store_invite" class="">到店自取</li>
+                    <li id="good_delivery" class="">送货上门</li>
+                </ul>
+            </div>
+            <div id="write_address" class="container dsn">
+                <div class="container_left">请输入送货地址</div>
+                <div id="shipping_arrow"><a href="#"></a></div>
+            </div>
+            <div id="user_inf" class="container dsn"><!--链接微信输入地址，返回时获取值，#write_address隐藏-->
+                <div class="container_left">配送至</div>
+                <div class="container_right">
+                    <div class="user_inf_con">
+                        <div id="user_inf_name">龙战明</div>
+                        <div id="user_inf_tel">170****8899</div>
+                    </div>
+                    <div class="user_inf_con">
+                        广东省深圳市龙华新区民治街道特区1980文化创业园3期1栋A106
+                    </div>
+                </div>
+                <div id="user_inf_arrow"><a href="selectaddress.html"></a></div>
+            </div>
+        </div>
+        <div id="section3">
+            <div class="ordinary_box">
+                <div class="ordinary_box_l">订单金额</div>
+                <div class="ordinary_box_r">￥<span id="pay_account">108.00</span></div>
+            </div>
+            <div class="ordinary_box">
+                <div class="ordinary_box_l">优惠券折扣</div>
+                <div class="ordinary_box_r">￥<span id="order_discount">0.00</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="floatbar_bottom">
+        <div id="floatbar_bottom_l">还需支付：<span>￥</span><span id="need_pay">108.00</span></div>
+        <div id="submit_order"><a href="#">提交订单</a></div>
+    </div>
+    <div id="coupons_Pop" class="pop_wrapper dsn">
+        <div class="pop_con">
+            <ul class="coupons_list">
+                <li class="select no_coupons">
+                    <div class="icon_no_ok"></div>
+                    <div class="coupons_list_messg">
+                        <div class="coupons_messg_txt">不使用优惠券</div>
+                    </div>
+                </li>
+                <!--<li>
+                    <div class="icon_no_ok"></div>
+                    <div class="coupons_list_messg">
+                        <div class="coupons_messg_txt">
+                            <span>2</span>元（满10元可用）</div>
+                        <div class="coupons_messg_time">有效期至2015.09.31</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon_no_ok"></div>
+                    <div class="coupons_list_messg">
+                        <div class="coupons_messg_txt"><span>5</span>元（满50元可用）</div>
+                        <div class="coupons_messg_time">有效期至2015.09.31</div>
+                    </div>
+                </li>-->
+            </ul>
+            <div class="pop_btn" id="coupons_Btn">
+                <div class="pop_remove_btn">取消</div>
+                <div class="pop_sure_btn">确定</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/libs/zepto.js"></script>
+   <script src="js/playOrder正式详情跳订单.js"></script>
+  <!--  <script src="js/playOrder自写详情跳订单.js"></script>-->
+    <script src="js/common.js"></script>
+</body>
+</html>

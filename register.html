@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body ms-controller="root" class="ms-controller">
+<div id="regWrap" class="wrap">
+    <h3 class="title">注册好邻居</h3>
+    <div class="tr"><span class="text">手机号码</span><input placeholder="可用于登录和找回密码" id="phone"></div>
+    <div class="tr"><span class="text">密码</span><input placeholder="6到18位字母、数字或下划线的组合" id="password"></div>
+    <div class="tr"><span class="text">验证码</span><input class="code" placeholder="验证码" id="code">
+        <input class="codebtn" value="获取短信验证码">
+    </div>
+<div class="tr">
+    <input class="checkbox" type="checkbox" id="checkbox"><span>阅读并同意<a href="#">&lt&lt接受用户协议&gt&gt</a></span>
+</div>
+<div><button class="submit" id="submit">立即注册</button></div>
+<div class="login"><a class="fr" href="#" id="login">立即登录</a></div>
+<script src="js/libs/zepto.js"></script>
+<script src="js/register正式.js"></script>
+<!--<script src="js/register自写.js"></script>-->
+</div>
+</body>
+</html>
